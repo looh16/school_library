@@ -1,8 +1,10 @@
 require './nameable'
+require './capitalize_decorator'
+require './trimmer_decorator'
 
 class Person < Nameable
   attr_reader :id
-  attr_accessor :name, age
+  attr_accessor :name, :age
 
   def initialize(age, name = 'Unknown', parent_permission: true)
     super()
