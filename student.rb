@@ -1,5 +1,6 @@
 class Student < Person
   attr_accessor :classroom
+
   belongs_to :classroom
 
   def initialize(classroom, age, name = 'Unknown', parent_permission: true)
@@ -11,5 +12,3 @@ class Student < Person
     "¯\(ツ)/¯"
   end
 end
-
-student_one = Student.new()
