@@ -1,6 +1,4 @@
 class Student < Person
-  attr_accessor :classroom
-
   belongs_to :classroom
 
   def initialize(classroom, age, name = 'Unknown', parent_permission: true)
@@ -10,5 +8,10 @@ class Student < Person
 
   def play_hooky
     "¯\(ツ)/¯"
+  end
+
+  def classroom=(classroom)
+    @classroom = classroom
+    classroom.students.push(self) unless classroom.students.include?(self)
   end
 end
