@@ -1,7 +1,7 @@
 class Classroom
   attr_accessor :label, :students
 
-  has_many :students
+  # has_many :students
 
   def initialize(label)
     @label = label
