@@ -4,8 +4,8 @@ class Person < Nameable
   attr_reader :id
   attr_accessor :name, :age, :rentals
 
-  has_many :rentals
-  has_many :books, through: rentals
+  # has_many :rentals
+  # has_many :books, through: rentals
 
   def initialize(age, name = 'Unknown', parent_permission: true)
     super()

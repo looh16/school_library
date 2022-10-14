@@ -1,5 +1,5 @@
 class Student < Person
-  belongs_to :classroom
+  # belongs_to :classroom
 
   def initialize(classroom, age, name = 'Unknown', parent_permission: true)
     super(age, name, parent_permission: parent_permission)
