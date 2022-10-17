@@ -1,8 +1,10 @@
 require_relative 'app'
+require './create_person'
 
 class Main
   def initialize
     @app = App.new
+    @new_person = Create_Person.new
     @output = 0
   end
 
@@ -29,7 +31,7 @@ class Main
     when 2
       @app.list_people
     when 3
-      @app.create_person
+      @new_person.create_person
     when 4
       @app.create_new_book
     when 5
