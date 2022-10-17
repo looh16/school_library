@@ -1,8 +1,8 @@
-class Create_Teacher 
+require './person'
+require './teacher'
 
-def create_new_teacher(specialization, age, name)
-    teacher = Teacher.new(specialization, age, name)
-    return teacher
-end
-
+class CreateTeacher
+  def create_new_teacher(specialization, age, name)
+    Teacher.new(specialization, age, name)
+  end
 end
