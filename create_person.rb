@@ -1,7 +1,10 @@
+require './create_teacher'
+
 class Create_Person
      
     
     def initialize
+        @new_teacher = Create_Teacher.new
         @people = []
     end
 
@@ -38,8 +41,19 @@ class Create_Person
         age = gets.chomp
         p 'type teacher specialization:'
         specialization = gets.chomp
-        create_teacher(specialization, age.to_i, name)
+        teacher = @new_teacher.create_new_teacher(specialization, age.to_i, name)
+        @people.push(teacher)
         p "Teacher #{name} has been added successfully!!!"
+      end
+
+      def list_people
+        if @people.length.positive?
+          @people.each_with_index do |person, i|
+            p "person number: #{i}, ID: #{person.id}, Name: #{person.name}, Age: #{person.age}"
+          end
+        else
+          p 'persons not found'
+        end
       end
     
      

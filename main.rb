@@ -29,7 +29,7 @@ class Main
     when 1
       @app.list_books
     when 2
-      @app.list_people
+      @new_person.list_people
     when 3
       @new_person.create_person
     when 4
