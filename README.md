@@ -1,8 +1,11 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# SCHOOL LIBRARY
+# OOP school library: refactor your code
 
-> Creating entities using Object Oriented Programming for the system School Library.
+> In this project, we will use your newly acquired knowledge and refactor our previous code. We created new classes from the main app like: 
+CreatePerson
+CreateStudent
+CreateTeacher
 
 
 ## Built With
@@ -22,12 +25,18 @@ To get a local copy of this project:
 4. Run the code
 
 
-👤 **Author**
+👤 **Authors**
 
+**Author1**
 - GitHub: [@githubhandle](https://github.com/looh16)
 - Twitter: [@twitterhandle](https://twitter.com/custodiolanga1)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/custodio-serafim)
 
+**Author2**
+
+- GitHub: (https://github.com/Piercel2022)
+- Twitter: (https://twitter.com/pier_celestin)
+- LinkedIn: (https://linkedin.com/in/piercelestinmax)
 
 ## 🤝 Contributing
 
