@@ -1,4 +1,5 @@
 require './book'
+require './create_rental'
 
 class CreateBook
   def initialize
@@ -12,7 +13,7 @@ class CreateBook
     author = gets.chomp
     book = Book.new(title, author)
     @books.push(book)
-    
+
     p "Book #{title} has been added successfully!!!"
   end
 

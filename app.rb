@@ -6,7 +6,7 @@ class App
   def initialize
     @new_person = CreatePerson.new
     @new_book = CreateBook.new
-    @new_rental = CreateRental.new({ persons: @new_persons, books: @new_books }) 
+    @new_rental = CreateRental.new({ persons: @new_person, books: @new_book })
     @output = 0
   end
 

@@ -63,7 +63,7 @@ class CreatePerson
   def list_people
     if @people.length.positive?
       @people.each_with_index do |person, i|
-        p "person number: #{i}, ID: #{person.id}, Name: #{person.name}, Age: #{person.age}"
+        p "person number: #{i}, id: #{person.id}, Name: #{person.name}, Age: #{person.age}"
       end
     else
       p 'persons not found'
