@@ -6,8 +6,8 @@ require './data/data_read'
 
 class CreateBook
   def initialize
-    file = File.open('books.json')
-    @books = File.read('books.json').split
+    file = File.open('./data/books.json')
+    @books = File.read('./data/books.json').split
     file.close
   end
 
