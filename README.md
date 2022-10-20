@@ -1,11 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# OOP school library: refactor your code
+# OOP school library: Preserve data
 
-> In this project, we will use your newly acquired knowledge and refactor our previous code. We created new classes from the main app like: 
-CreatePerson
-CreateStudent
-CreateTeacher
+> In this project,  we preserve the data from your app and load preserved data on startup.
+ On exit from your app save all the data (books, people, and rentals) into JSON files after creating them in the folder data.
+On startup of the app, all data from files are loaded from the files.
 
 
 ## Built With
