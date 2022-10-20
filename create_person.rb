@@ -63,8 +63,6 @@ class CreatePerson
     p "Teacher #{name} has been added successfully!!!"
   end
 
-  
-
   def list_people
     if @people.length.positive?
       @people.each_with_index do |person, i|

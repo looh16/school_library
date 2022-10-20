@@ -6,8 +6,8 @@ require './data/data_read'
 
 class CreateBook
   def initialize
-    file = File.open("books.json")
-    @books = File.read("books.json").split
+    file = File.open('books.json')
+    @books = File.read('books.json').split
     file.close
   end
 
@@ -18,15 +18,15 @@ class CreateBook
     author = gets.chomp
     book = Book.new(title, author)
     @books.push(book)
-    File.open("books.json", "w") { |f| f.write(@books)}
+    File.write('books.json', @books)
     p "Book #{title} has been added successfully!!!"
     save_books(@books)
   end
 
   def list_books
     if @books.length.positive?
-      @books.each_with_index do |book, i|
-        p ("#{@id}")
+      @books.each_with_index do |_book, _i|
+        p(@id.to_s)
       end
     else
       p 'books not found'
