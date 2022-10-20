@@ -1,6 +1,8 @@
 require './book'
 require './create_rental'
 require 'json'
+require './data/data_write'
+require './data/data_read'
 
 class CreateBook
   def initialize
@@ -18,6 +20,7 @@ class CreateBook
     @books.push(book)
     File.open("books.json", "w") { |f| f.write(@books)}
     p "Book #{title} has been added successfully!!!"
+    save_books(@books)
   end
 
   def list_books
