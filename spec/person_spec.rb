@@ -6,19 +6,13 @@ require './book'
 
 describe Person do
   context 'When testing the Person class' do
-    it 'Should Create a Person' do
-      person = Person.new(22, 'Jhon')
-      expect(person.name).to eq('Jhon')
-      expect(person.age).to eq(22)
-    end
+    person = Person.new(22, 'Jhon')
 
     it 'Should be instance of Person' do
-      person = Person.new(22, 'Jhon')
       expect(person).to be_instance_of(Person)
     end
 
     it 'Should have a correct name' do
-      person = Person.new(22, 'Jhon')
       expect(person.correct_name).to eq('Jhon')
     end
 
@@ -26,6 +20,10 @@ describe Person do
       book = Book.new('React', 'Jhon')
       rental = Rental.new('2020-10-10', book, self)
       expect(rental.book.title).to eq('React')
+    end
+
+    it 'should check if can use service' do
+      expect(person.can_use_services?).to eql(true)
     end
   end
 end
