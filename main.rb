@@ -1,8 +1,13 @@
 require './app'
+require './data/data_read'
+require './data/data_write'
 
 class Main
   def run
     @app = App.new
+    @persons = read_person
+    @books = read_book
+    @rentals = read_rentals
     options
   end
 
