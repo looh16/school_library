@@ -23,10 +23,9 @@ describe Person do
     end
 
     it 'Should Create a Rental' do
-        person = Person.new(20, 'John')
-        book = Book.new('React', 'Jhon') 
-        rental = Rental.new('2020-10-10', book, self)
-        expect(rental.book.title).to eq('React')
-      end
+      book = Book.new('React', 'Jhon')
+      rental = Rental.new('2020-10-10', book, self)
+      expect(rental.book.title).to eq('React')
+    end
   end
 end

@@ -11,11 +11,10 @@ describe Book do
     end
 
     it 'Should Create a Rental' do
-        person = Person.new(20, 'John')
-        book = Book.new('React', 'Jhon')
-        rental = book.add_rental(person, '2020-10-10')
-        expect(rental.person.name).to eq('John')
-      end
-
+      person = Person.new(20, 'John')
+      book = Book.new('React', 'Jhon')
+      rental = book.add_rental(person, '2020-10-10')
+      expect(rental.person.name).to eq('John')
+    end
   end
 end
