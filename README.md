@@ -1,12 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
+OOP school library: unit tests
 
-# OOP school library: refactor your code
-
-> In this project, we will use your newly acquired knowledge and refactor our previous code. We created new classes from the main app like: 
-CreatePerson
-CreateStudent
-CreateTeacher
-
+In this project we add unit tests to our codebase, specifically to our classes. We create the new repository named spec and we add the classes specification there (book, person, teacher, student, classroom and rental)
 
 ## Built With
 
